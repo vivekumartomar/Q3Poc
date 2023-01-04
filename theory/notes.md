@@ -50,9 +50,6 @@ npx parcel <entry_point>
 npx parcel build <entry_point> 
 ```
 
-## 3. Why react is fast?
 
-It is not only the virtual DOM that makes React faster but other components like bundlers (e.g. parcel, webpack ,vite etc. ) and development ecosystme also.  
-
-## 4. Transitive dependencies:
+## 3. Transitive dependencies:
 It is a type of dependency where one dependency requires another dependency to work properly and another dependency requires an another dependecy.
