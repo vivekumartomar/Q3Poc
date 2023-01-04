@@ -1,4 +1,4 @@
-## Session #2 of Namaste React course:
+## Poc
 
 ### Topics covered in this session:
 
