@@ -24,13 +24,13 @@ Parcel/Webpack are type of bundlers that we use to power our application with di
 ## 5. What is difference between `dependencies` vs `devDependencies` ? :
 A dependency is a library that a project needs to function effectively. DevDependencies are the packages a developer needs during development.
 
-## 7. What is Tree Shaking?
+## 6. What is Tree Shaking?
 Tree shaking is process of removing the unwanted code that we do not use while developing the application
 
-## 8. What is Hot Module Replacement?
+## 7. What is Hot Module Replacement?
 Hot Module Replacement or HMR is a feature that bundler provides. HMR uses File Watcher algorithms to keep track of file changes while development and renders those changes on the Web UI.     
 
-## 9. List down your favourite 5 superpowers of Parcel and describe any 3 of them in your own words.
+## 8. List down your favourite 5 superpowers of Parcel and describe any 3 of them in your own words.
 
 - **HMR** - Hot module replacement : Parcel provides HMR properties to keep track of files changes by using file watcher algorithms. 
 - **Compression** : Parcel provides compression properties to compress our files e.g images to optimize the performance of our app.
@@ -38,10 +38,10 @@ Hot Module Replacement or HMR is a feature that bundler provides. HMR uses File 
 - **Zero config** : Unlike Webpack, Parcel requires zero configurations to setup.
 - **Old browser competibility** : Parcel allows support for older broser also.
 
-## 11. What is `.gitignore`? What should we add and not add into it?
+## 9. What is `.gitignore`? What should we add and not add into it?
 This file contains the list of  files that we should not commit to the repository.
  
-## 3. What is the difference betweeen `package.json` and `package-lock.json`.
+## 10. What is the difference betweeen `package.json` and `package-lock.json`.
 
 1. `package.json` :
 
@@ -80,18 +80,18 @@ These are used with the versions of the package installed.
 > If none of them is present , that means only the version specified in `package.json` file is used in the development.
 
 
-## 12. Why should I not modify `package-lock.json`?
+## 11. Why should I not modify `package-lock.json`?
 `package-lock.json` file contains the information about the dependencies and their versions  used in the project. Deleting it would cause depencies issues in the production environment.
 
-## 13. What is `node_modules` ? Is it a good idea to push that on git?
+## 12. What is `node_modules` ? Is it a good idea to push that on git?
 
 `node_modules` is a folder that contains all the packages and dependecies used the the development of the applicaion. 
 \n It is big file that we should not push to github. 
 
-## 14. What is the `dist` folder?
+## 13. What is the `dist` folder?
 `dist` folder is created when parcel creates the build for the application . It contains the HTML and CSS and JS with other files  for the build.
 
-## What is `browserlists`?
+## 14 What is `browserlists`?
 `browserlist` is a list brosers that our applicaion should support . It also covers the browser coverage over a geographical area.
 
 
