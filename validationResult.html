@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Validation Results</title>
+  <style>
+    body { font-family: Arial; padding: 20px; }
+    .error { color: red; }
+    .success { color: green; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <div id="result"></div>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const errors = urlParams.get("errors");
+    const success = urlParams.get("success");
+
+    const resultDiv = document.getElementById("result");
+    if (errors) {
+      resultDiv.innerHTML = `<div class="error"><h3>Validation Failed</h3><p>${errors}</p></div>`;
+    } else if (success) {
+      resultDiv.innerHTML = `<div class="success"><h3>Validation Passed ✅</h3></div>`;
+    }
+  </script>
+</body>
+</html>
