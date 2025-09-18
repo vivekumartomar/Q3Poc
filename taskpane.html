@@ -1,22 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8" />
-  <title>My Outlook Add-in</title>
-  <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+  <meta charset="utf-8"/>
+  <title>Validation Add-in</title>
 </head>
 <body>
-  <h2>Hello from Outlook Add-in </h2>
-  <button id="validate">Run Validation</button>
-
-  <script>
-    Office.onReady(() => {
-      document.getElementById("validate").onclick = () => {
-        const item = Office.context.mailbox.item;
-        const subject = item.subject || "No subject";
-        alert("Validation: Subject is -> " + subject);
-      };
-    });
-  </script>
+  <h2>Email Validator</h2>
+  <p>Click "Validate Email" button in compose window.</p>
 </body>
 </html>
